@@ -9,8 +9,9 @@
         :root {
             --primary-color: #3498db;
             --secondary-color: #2c3e50;
-            --text-color: #333;
-            --background-color: #f4f4f4;
+            --text-color: #e0e0e0;
+            --background-color: #121212;
+            --card-background-color: #1e1e1e;
         }
 
         * {
@@ -34,7 +35,7 @@
         }
 
         .navbar {
-            background-color: var(--primary-color);
+            background-color: var(--secondary-color);
             padding: 1rem 0;
         }
 
@@ -67,7 +68,7 @@
         }
 
         .nav-link:hover {
-            color: var(--secondary-color);
+            color: var(--primary-color);
         }
 
         .main-content {
@@ -122,11 +123,11 @@
         }
 
         .product-card {
-            background-color: #fff;
+            background-color: var(--card-background-color);
             border-radius: 10px;
             padding: 1.5rem;
             margin-bottom: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         .product-title {
@@ -148,8 +149,6 @@
             background-color: var(--secondary-color);
         }
 
-        
-
         @media (max-width: 768px) {
             .main-content {
                 flex-direction: column;
@@ -170,7 +169,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="https://everything-dev.github.io/EveryThing-Corp-/" class="navbar-brand" target="_blank">EveryThing Dev. Co.</a>
+            <a href="https://everything-dev.github.io/EveryThing-Corp-/" class="navbar-brand" target="_blank">EveryThing Dev.</a>
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
                 <li class="nav-item"><a href="#products" class="nav-link">My Apps</a></li>
